@@ -5,6 +5,9 @@
 #root {
   width: 100%;
 }
+ul li {
+  cursor: pointer;
+}
 
 html, body {
   margin: 0;
