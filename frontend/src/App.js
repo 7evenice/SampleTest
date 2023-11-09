@@ -55,13 +55,13 @@ function App() {
                   Try Your <span style={{ color: '#ff9b51', margin: '0 4px' }}> FREE </span> Trial Today
                 </span>
                 <div>
-                  <input type='text' id='name' name='name' placeholder='Name' />
+                  <input type='text' name='name' placeholder='Name' />
                 </div>
                 <div>
-                  <input type='email' id='email' name='email' placeholder='Email' />
+                  <input type='email'  name='email' placeholder='Email' />
                 </div>
                 <div>
-                  <input type='password' id='password' name='password' placeholder='Your password' />
+                  <input type='password' name='password' placeholder='Your password' />
                 </div>
                 <button className='btn-form' type='submit'>
                   Get Started
@@ -227,17 +227,17 @@ function App() {
             <div className='form-container row  flex-space-between'>
               <div className='left-form flex-col'>
                 <div className='form-group'>
-                  <input type='text' id='name' name='name' placeholder='Name' />
+                  <input type='text'  name='name' placeholder='Name' />
                 </div>
                 <div className='form-group'>
-                  <input type='email' id='email' name='email' placeholder='Email' />
+                  <input type='email'  name='email' placeholder='Email' />
                 </div>
                 <div className='form-group'>
-                  <input type='text' id='subject' name='subject' placeholder='Subject' />
+                  <input type='text'  name='subject' placeholder='Subject' />
                 </div>
               </div>
               <div className='right-form'>
-                <textarea name='' id='' cols={30} rows={10} placeholder='Message' defaultValue={''} />
+                <textarea cols={30} rows={10} placeholder='Message' defaultValue={''} />
               </div>
             </div>
             <div className='btn-send-mess flex-col flex-center'>
