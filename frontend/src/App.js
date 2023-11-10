@@ -1,10 +1,13 @@
 import './App.css';
 import logo from './assets/img/Logo.svg';
+import logoBanner from './assets/img/logo-banner.svg';
+
 import imgBanner2 from './assets/img/banner-bg2.svg';
 import imgBanner3 from './assets/img/banner-bg3.png';
 import iconUpload1 from './assets/img/icon-upload.png';
 import iconUpload2 from './assets/img/icon-upload-2.png';
 import bannerBg3 from './assets/img/banner-bg3.png';
+import bannerBg4 from './assets/img/banner-bg4.png';
 import iconDesign from './assets/img/icon-design.png';
 import iconCrafted from './assets/img/icon-crafted.png';
 import iconCustom from './assets/img/icon-custom.png';
@@ -12,13 +15,13 @@ import iconSocial from './assets/img/icon-social.png';
 
 function App() {
   return (
-    <div className='app'>
+    <>
       <header>
         <nav>
           <div className='container'>
             <div className='navbar row flex-align-center'>
               <div className='left-nav col-6'>
-                <img src={logo} alt='' style={{ height: 30 }} />
+                <img src={logo} alt='' />
               </div>
               <div className='right-nav col-6'>
                 <ul className='nav-list flex-row'>
@@ -37,7 +40,7 @@ function App() {
         <section className='banner'>
           <div className='container' style={{ display: 'flex', width: '100%' }}>
             <div className='left-content col-6'>
-              <img src={logo} alt='' style={{ width: 175, height: 60 }} />
+              <img src={logoBanner} alt='' />
               <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
               <div className='line' />
               <p>
@@ -51,17 +54,17 @@ function App() {
             </div>
             <div className='right-content col-6'>
               <form>
-                <span className='title-input' style={{ width: '100%', fontSize: 20 }}>
+                <span className='title-input'>
                   Try Your <span style={{ color: '#ff9b51', margin: '0 4px' }}> FREE </span> Trial Today
                 </span>
                 <div>
-                  <input type='text' name='name' placeholder='Name' />
+                  <input type='text' id='name' name='name' placeholder='Name' />
                 </div>
                 <div>
-                  <input type='email'  name='email' placeholder='Email' />
+                  <input type='email' id='email' name='email' placeholder='Email' />
                 </div>
                 <div>
-                  <input type='password' name='password' placeholder='Your password' />
+                  <input type='password' id='password' name='password' placeholder='Your password' />
                 </div>
                 <button className='btn-form' type='submit'>
                   Get Started
@@ -106,7 +109,7 @@ function App() {
           <div className='container'>
             <div className='row flex-align-center'>
               <div className='left-banner-3 col-6'>
-                <img src={imgBanner3} alt='' />
+                <img src={bannerBg3} alt='' />
               </div>
               <div className='right-banner-3 col-6'>
                 <div className='content-sub flex-col'>
@@ -120,7 +123,7 @@ function App() {
                   </div>
                   <div className='sub-action flex-col'>
                     <div className='sub-action-1 flex-row'>
-                      <img src={iconUpload1} alt='' style={{ width: 35, height: 35 }} />
+                      <img src={iconUpload1} alt='' />
                       <div className='content-sub-action'>
                         <div className='action-header'>Title</div>
                         <div className='action-content'>
@@ -129,7 +132,7 @@ function App() {
                       </div>
                     </div>
                     <div className='sub-action-1 flex-row'>
-                      <img src={iconUpload2} alt='' style={{ width: 35, height: 35 }} />
+                      <img src={iconUpload2} alt='' />
                       <div className='content-sub-action'>
                         <div className='action-header'>Title</div>
                         <div className='action-content'>
@@ -163,7 +166,7 @@ function App() {
                 </div>
               </div>
               <div className='right-banner-4 col-6'>
-                <img src={bannerBg3} alt='' />
+                <img src={bannerBg4} alt='' />
               </div>
             </div>
           </div>
@@ -177,7 +180,7 @@ function App() {
             </div>
             <div className='down-content flex-row '>
               <div className='content-items flex-col flex-center'>
-                <img src={iconDesign} alt='' style={{ width: 70, height: 70 }} />
+                <img src={iconDesign} alt='' />
                 <div className='content-items-title'>Thoughtful Design</div>
                 <div className='content-items-desc'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit labore aspernatur
@@ -185,7 +188,7 @@ function App() {
                 </div>
               </div>
               <div className='content-items flex-col flex-center'>
-                <img src={iconCrafted} alt='' style={{ width: 70, height: 70 }} />
+                <img src={iconCrafted} alt='' />
                 <div className='content-items-title'>Well Crafted</div>
                 <div className='content-items-desc'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea officiis dolores mollitia
@@ -193,7 +196,7 @@ function App() {
                 </div>
               </div>
               <div className='content-items flex-col flex-center'>
-                <img src={iconCustom} alt='' style={{ width: 70, height: 70 }} />
+                <img src={iconCustom} alt='' />
                 <div className='content-items-title'>Easy to Customize</div>
                 <div className='content-items-desc'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum hic mollitia ducimus quaerat
@@ -227,17 +230,17 @@ function App() {
             <div className='form-container row  flex-space-between'>
               <div className='left-form flex-col'>
                 <div className='form-group'>
-                  <input type='text'  name='name' placeholder='Name' />
+                  <input type='text' id='name' name='name' placeholder='Name' />
                 </div>
                 <div className='form-group'>
-                  <input type='email'  name='email' placeholder='Email' />
+                  <input type='email' id='email' name='email' placeholder='Email' />
                 </div>
                 <div className='form-group'>
-                  <input type='text'  name='subject' placeholder='Subject' />
+                  <input type='text' id='subject' name='subject' placeholder='Subject' />
                 </div>
               </div>
               <div className='right-form'>
-                <textarea cols={30} rows={10} placeholder='Message' defaultValue={''} />
+                <textarea name='' id='' cols={30} rows={10} placeholder='Message' defaultValue={''} />
               </div>
             </div>
             <div className='btn-send-mess flex-col flex-center'>
@@ -248,11 +251,11 @@ function App() {
       </main>
       <footer>
         <div className='footer flex-col flex-center'>
-          <img src={iconSocial} alt='' style={{ height: 25 }} />
+          <img src={iconSocial} alt='' />
           <p>© 2021 Axure Themes</p>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
 
